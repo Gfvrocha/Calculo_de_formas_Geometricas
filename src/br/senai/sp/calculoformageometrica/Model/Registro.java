@@ -4,38 +4,63 @@ import java.util.Scanner;
 
 public class Registro {
 
-    //Instanciar Exibir
-    Exibir objExibir = new Exibir();
-
-    //Instancia scanner
+    /** Instancia Teclado */
     Scanner teclado = new Scanner(System.in);
 
-
-    //Instancia quadrado
-    Quadrado objQuadrado = new Quadrado();
-
-    //Instanciar triangulo
+    /** Instancia Geral */
     Triangulo objTriangulo = new Triangulo();
+    Quadrado objQuadrado = new Quadrado();
+    Circulo objCirculo = new Circulo();
+    Retangulo objRetangulo = new Retangulo();
 
-    public Quadrado RegistroQuadrado(){
+    public Triangulo CadastrarTriangulo(){
+        System.out.println("=0=0= Triângulo =0=0=");
+        System.out.println("Informe a Base: ");
+        objTriangulo.base = teclado.nextDouble();
+        System.out.println("Informe a Altura: ");
+        objTriangulo.altura = teclado.nextDouble();
+        System.out.println("=0=0=0=0=0=0=0=0=0=0=0=");
 
-        System.out.println("Qual a medida do lado 1 no quadrado: ");
+        return objTriangulo;
+
+    }
+    public Quadrado CadastrarQuadrado(){
+        System.out.println("=0=0= Quadrado =0=0=");
+        System.out.println("Informe o lado 1: ");
         objQuadrado.lado1 = teclado.nextDouble();
-        System.out.println("Qual a medida do lado 2 do quadrado: ");
+        System.out.println("Informe o lado 2: ");
         objQuadrado.lado2 = teclado.nextDouble();
+        System.out.println("=0=0=0=0=0=0=0=0=0=0=0=");
 
         return objQuadrado;
 
     }
+    public Retangulo CadastrarRetangulo(){
+        System.out.println("=0=0= Retangulo =0=0=");
+        System.out.println("Informe o lado 1: ");
+        objRetangulo.lado1 = teclado.nextDouble();
+        System.out.println("Informe o lado 2: ");
+        objRetangulo.lado2 = teclado.nextDouble();
+        System.out.println("=0=0=0=0=0=0=0=0=0=0=0=");
 
-    public Triangulo RegistroTriangulo(){
-        System.out.println("Qual é a medida da Base do Triangulo: ");
-        objTriangulo.base = teclado.nextDouble();
-        System.out.println("Qual é a medida da Altura do Triangulo: ");
-        objTriangulo.altura = teclado.nextDouble();
+        return objRetangulo;
 
-        return objTriangulo;
     }
+
+    public Circulo CadastrarCirculo(){
+        System.out.println("=0=0= Circulo =0=0=");
+        System.out.println("Informe o Raio: ");
+        objCirculo.raio = teclado.nextDouble();
+        System.out.println("=0=0=0=0=0=0=0=0=0=0=0=");
+
+        return objCirculo;
+
+    }
+
+
+
+
+
 
 
 

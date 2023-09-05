@@ -2,17 +2,18 @@ package br.senai.sp.calculoformageometrica.Model;
 
 public class Triangulo {
 
-    public double altura, base;
+    public double base, altura, area, perimetro;
+    public double CalcularArea (){
+        area = (base * altura) / 2;
+        return area;
 
-    public double CalcularArea(){
-
-        double areaTriangulo = (base * altura) / 2;
-        return areaTriangulo;
     }
 
     public double CalcularPerimetro(){
-
-        double perimetroTriangulo = (base + altura) * 2;
-        return perimetroTriangulo;
+        perimetro = base + altura * 2;
+        return perimetro;
     }
+
+
+
 }

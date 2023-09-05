@@ -1,7 +1,6 @@
 package br.senai.sp.calculoformageometrica.Model;
 
-public class Quadrado {
-
+public class Retangulo {
     double lado1, lado2, area, perimetro;
 
     public double CalcularArea(){
@@ -18,3 +17,4 @@ public class Quadrado {
     }
 
 }
+
